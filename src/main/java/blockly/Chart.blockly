@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly formTarget="src/main/webapp/views/logged/home.view.html" resourceType="JAVA" ruleDescription="Chart" ruleName="Chart" ruleSynchronous="false" ruleTimeout="300" ruleType="I">
+  <metadata scale="1" scrollx="385.9999999999989" scrolly="-60.99999999999994" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Creates a function with an output." type="procedures_defreturn" x="-22" y="68">
+    <field name="NAME">monthlyUserChart</field>
+    <comment h="80" pinned="false" w="160">Chart</comment>
+    <statement name="STACK">
+      <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="-52ncjgZ0*@-(cpb=1V6" origintype="variables_set" output="false" tooltip="Sets this variable to be equal to the input." type="variables_set">
+        <field name="VAR">months</field>
+        <value name="VALUE">
+          <block colour="#db802b" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="R(6cd{|h7auCDOPY,QN$" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3EName:%3C/strong%3E%3Cdiv%3EOpen%20query%20database%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescription:%3C/strong%3E%3Cdiv%3EFunction%20to%20retrieve%20data%20from%20database%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParameters:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entity%20:%20String%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Query%20:%20String%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Query%20params%20:%20List%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3EReturn:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20DataSet%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EHelp:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+            <mutation data="%7B%22queryBuilderJson%22:%7B%22isEmpty%22:true,%22isRawSql%22:true,%22sqlContent%22:%22select%20case%20when%20extract(month%20u.addedDate)%20=%201%20then%20%5C%22Janeiro%5C%22%20when%20extract(month%20u.addedDate)%20=%202%20then%20%5C%22Fevereiro%5C%22%20when%20extract(month%20u.addedDate)%20=%203%20then%20%5C%22Mar%C3%A7o%5C%22%20when%20extract(month%20u.addedDate)%20=%204%20then%20%5C%22Abril%5C%22%20when%20extract(month%20u.addedDate)%20=%205%20then%20%5C%22Maio%5C%22%20when%20extract(month%20u.addedDate)%20=%206%20then%20%5C%22Junho%5C%22%20when%20extract(month%20u.addedDate)%20=%207%20then%20%5C%22Julho%5C%22%20when%20extract(month%20u.addedDate)%20=%208%20then%20%5C%22Agosto%5C%22%20when%20extract(month%20u.addedDate)%20=%209%20then%20%5C%22Setembro%5C%22%20when%20extract(month%20u.addedDate)%20=%2010%20then%20%5C%22Outubro%5C%22%20when%20extract(month%20u.addedDate)%20=%2011%20then%20%5C%22Novembro%5C%22%20else%20%5C%22Dezembro%5C%22%20end%20as%20monthName,%20extract(month%20u.addedDate)%20as%20monthNumber%20from%20User%20u%20group%20by%20monthName%20,%20monthNumber%20order%20by%20monthNumber%20asc%22,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22User%22,%22entityFullName%22:%22app.entity.User%22,%22filter%22:%22select%20case%20when%20extract(month%20u.addedDate)%20=%201%20then%20%5C%22Janeiro%5C%22%20when%20extract(month%20u.addedDate)%20=%202%20then%20%5C%22Fevereiro%5C%22%20when%20extract(month%20u.addedDate)%20=%203%20then%20%5C%22Mar%C3%A7o%5C%22%20when%20extract(month%20u.addedDate)%20=%204%20then%20%5C%22Abril%5C%22%20when%20extract(month%20u.addedDate)%20=%205%20then%20%5C%22Maio%5C%22%20when%20extract(month%20u.addedDate)%20=%206%20then%20%5C%22Junho%5C%22%20when%20extract(month%20u.addedDate)%20=%207%20then%20%5C%22Julho%5C%22%20when%20extract(month%20u.addedDate)%20=%208%20then%20%5C%22Agosto%5C%22%20when%20extract(month%20u.addedDate)%20=%209%20then%20%5C%22Setembro%5C%22%20when%20extract(month%20u.addedDate)%20=%2010%20then%20%5C%22Outubro%5C%22%20when%20extract(month%20u.addedDate)%20=%2011%20then%20%5C%22Novembro%5C%22%20else%20%5C%22Dezembro%5C%22%20end%20as%20monthName,%20extract(month%20u.addedDate)%20as%20monthNumber%20from%20User%20u%20group%20by%20monthName%20,%20monthNumber%20order%20by%20monthNumber%20asc%22,%22params%22:%22%5B%5D%22%7D" name="{{cronapi.database.Operations.query}}"/>
+          </block>
+        </value>
+        <next>
+          <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="`Lp.sNZ{1Mw/WmJPEG$*" origintype="variables_set" output="false" tooltip="Sets this variable to be equal to the input." type="variables_set">
+            <field name="VAR">monthName</field>
+            <value name="VALUE">
+              <block colour="#745ba5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="^jwAC2C4-d1P84S}+5FS" origintype="lists_create_with" output="true" tooltip="Create a list with any number of items." type="lists_create_with">
+                <mutation items="0"/>
+              </block>
+            </value>
+            <next>
+              <block colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="-hiqWr.~SI`S:Q@Gb0fO" origintype="text_print" output="false" tooltip="Print the specified text, number or other value." type="text_print">
+                <value name="TEXT">
+                  <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="T?VcO.EKF(@]]C{5.H9h" origintype="text" output="true" tooltip="function () { [native code] }" type="text" xmlns="">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                  <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="iQ:BAa81h!QWY]?%rCN5" origintype="variables_get" output="true" tooltip="Returns the value of this variable." type="variables_get">
+                    <field name="VAR">months</field>
+                  </block>
+                </value>
+                <next>
+                  <block colour="#5ba55b" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="c,Qr?k1cQjV;P|U2e~L:" origintype="controls_forEach" output="false" tooltip="Do some statements several times." type="controls_forEach">
+                    <field name="VAR">i</field>
+                    <value name="LIST">
+                      <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="EL9TvkJ#M6jymG5y;QJ(" origintype="variables_get" output="true" tooltip="Returns the value of this variable." type="variables_get">
+                        <field name="VAR">months</field>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block colour="#745ba5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="g91+N+:UohwwH$IT.Y)!" origintype="lists_setIndex" output="false" tooltip="function () {&#10;      var mode = thisBlock.getFieldValue('MODE');&#10;      var where = thisBlock.getFieldValue('WHERE');&#10;      var tooltip = '';&#10;      switch(mode + ' ' + where) {&#10;      case 'SET FROM_START':&#10;      case 'SET FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_FROM;&#10;        break;&#10;      case 'SET FIRST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_FIRST;&#10;        break;&#10;      case 'SET LAST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_LAST;&#10;        break;&#10;      case 'SET RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_RANDOM;&#10;        break;&#10;      case 'INSERT FROM_START':&#10;      case 'INSERT FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_FROM;&#10;        break;&#10;      case 'INSERT FIRST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_FIRST;&#10;        break;&#10;      case 'INSERT LAST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_LAST;&#10;        break;&#10;      case 'INSERT RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_RANDOM;&#10;        break;&#10;      }&#10;      if(where == 'FROM_START' || where == 'FROM_END') {&#10;        tooltip += '  ' + Blockly.Msg.LISTS_INDEX_FROM_START_TOOLTIP.replace('%1', thisBlock.workspace.options.oneBasedIndex ? '#1' : '#0');&#10;      }&#10;      return tooltip;&#10;    }" type="lists_setIndex">
+                        <mutation at="false"/>
+                        <field name="MODE">INSERT</field>
+                        <field name="WHERE">FIRST</field>
+                        <value name="LIST">
+                          <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="|@|Ql$!d7v6m/3(C[?;$" origintype="variables_get" output="true" tooltip="Returns the value of this variable." type="variables_get">
+                            <field name="VAR">monthName</field>
+                          </block>
+                        </value>
+                        <value name="TO">
+                          <block colour="#917731" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="x|d[OqrO7YiE4%@kFL8)" multilayer="false" namespace="cronapi.map.Operations.getMapField" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3EName:%3C/strong%3E%3Cdiv%3EGet%20map%20field%20by%20Key%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescription:%3C/strong%3E%3Cdiv%3EFunction%20to%20get%20a%20map%20field%20by%20a%20map%20key%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParameters:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Map%20:%20Object%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Key%20:%20String%3C/span%3E%3Cdiv%3E%20Key%20to%20search%20in%20Map%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3EReturn:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Object%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EHelp:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.map.Operations.getMapField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.map.Operations.getMapField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                            <mutation name="{{cronapi.map.Operations.getMapField}}" return-raw-type="cronapi.Var">
+                              <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.OBJECT" name="Map"/>
+                              <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Key"/>
+                            </mutation>
+                            <value name="ARG0">
+                              <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Zclb4s|;HNE-c}pBy-Pz" origintype="variables_get" output="true" tooltip="Returns the value of this variable." type="variables_get">
+                                <field name="VAR">i</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="v#Yk^T5h9i,?CQ]}jAr$" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT"/>
+                              </shadow>
+                              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="slwIct8.D8y4r,WzVcS9" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT">monthName</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="xTBV^|QWs0FGJ]NysEtv" origintype="text_print" output="false" tooltip="Print the specified text, number or other value." type="text_print">
+                            <value name="TEXT">
+                              <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="T?VcO.EKF(@]]C{5.H9h" origintype="text" output="true" tooltip="function () { [native code] }" type="text" xmlns="">
+                                <field name="TEXT">abc</field>
+                              </shadow>
+                              <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Q+*^hf?iJZJU8)e:T`+?" origintype="variables_get" output="true" tooltip="Returns the value of this variable." type="variables_get">
+                                <field name="VAR">i</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="8E8fY[]?qT!q4$.]MS0f" origintype="text_print" output="false" tooltip="Print the specified text, number or other value." type="text_print">
+                                <value name="TEXT">
+                                  <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="T?VcO.EKF(@]]C{5.H9h" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                    <field name="TEXT">abc</field>
+                                  </shadow>
+                                  <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="#AOge9!oqh7}y@.wr[Y^" origintype="variables_get" output="true" tooltip="Returns the value of this variable." type="variables_get">
+                                    <field name="VAR">monthName</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block colour="#f582a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="tm@sed*$55KXj$==H6Yg" multilayer="false" namespace="cronapi.chart.Operations.createChart" origintype="procedures_arbitrary_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3EName:%3C/strong%3E%3Cdiv%3ECreate%20chart%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescription:%3C/strong%3E%3Cdiv%3EFunction%20that%20create%20a%20chart%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParameters:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Id%20:%20Object%3C/span%3E%3Cdiv%3E%20Chart%20id%20(canvas)%3C/div%3E%3Cspan%3E%20-%20Chart%20type%20:%20String%3C/span%3E%3Cdiv%3E%20Chart%20type%20to%20be%20created%3C/div%3E%3Cspan%3E%20-%20Legends%20:%20Object%3C/span%3E%3Cdiv%3E%20Chart%20legends%3C/div%3E%3Cspan%3E%20-%20Options=Chart%20options%20:%20Object%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Chart%20serie(s)%20:%20Object%3C/span%3E%3Cdiv%3E%20Set%20of%20chart%20series%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EHelp:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.chart.Operations.createChart%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.chart.Operations.createChart%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_arbitrary_callnoreturn">
+                        <mutation items="5" name="{{cronapi.chart.Operations.createChart}}">
+                          <arg name="Id"/>
+                          <arg name="Chart type"/>
+                          <arg name="Legends"/>
+                          <arg name="Options=Chart options"/>
+                          <arg name="Chart serie(s)"/>
+                        </mutation>
+                        <value name="ARG0">
+                          <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="c5=;w^4}`,}o/I:}BFW=" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                            <field name="SELECT">chart5115</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block colour="#f582a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="CLOc3@[{[C-b%lJ~?02x" origintype="util_dropdown" output="true" type="util_dropdown">
+                            <mutation>
+                              <arg name="line" value="line"/>
+                              <arg name="bar" value="bar"/>
+                              <arg name="doughnut" value="doughnut"/>
+                              <arg name="pie" value="pie"/>
+                              <arg name="polarArea" value="Polar Area"/>
+                            </mutation>
+                            <field name="SELECT">bar</field>
+                          </block>
+                        </value>
+                        <value name="ARG2">
+                          <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="lht#oey(+Mjis)Tb:,u1" origintype="variables_get" output="true" tooltip="Returns the value of this variable." type="variables_get">
+                            <field name="VAR">monthName</field>
+                          </block>
+                        </value>
+                        <value name="ARG4">
+                          <block colour="#f582a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="%5EHgX00Y4;pTx,)7s3R" multilayer="false" namespace="cronapi.chart.Operations.createChartSerie" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3EName:%3C/strong%3E%3Cdiv%3ECreate%20serie%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescription:%3C/strong%3E%3Cdiv%3EFunction%20that%20create%20a%20chart%20serie%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParameters:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Serie%20name%20:%20Object%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Data%20:%20Object%3C/span%3E%3Cdiv%3E%20Serie%20data%3C/div%3E%3Cspan%3E%20-%20Options%20:%20Object%3C/span%3E%3Cdiv%3E%20Serie%20Options%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3EReturn:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Object%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EHelp:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.chart.Operations.createChartSerie%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.chart.Operations.createChartSerie%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                            <mutation name="{{cronapi.chart.Operations.createChartSerie}}" return-raw-type="cronapi.Var">
+                              <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.OBJECT" name="Serie name"/>
+                              <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.OBJECT" name="Data"/>
+                              <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.OBJECT" name="Options"/>
+                            </mutation>
+                            <value name="ARG0">
+                              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="M@PLSl1lAeYfRDoF}zgz" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT">Users</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block colour="#db802b" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=",INi@wh]JN$yq?XqVz6`" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3EName:%3C/strong%3E%3Cdiv%3EOpen%20query%20database%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescription:%3C/strong%3E%3Cdiv%3EFunction%20to%20retrieve%20data%20from%20database%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParameters:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entity%20:%20String%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Query%20:%20String%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Query%20params%20:%20List%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3EReturn:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20DataSet%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EHelp:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+                                <mutation data="%7B%22queryBuilderJson%22:%7B%22isEmpty%22:true,%22isRawSql%22:true,%22sqlContent%22:%22select%20COUNT(u.id)%20from%20User%20u%20%20group%20by%20extract(month%20u.addedDate)%20order%20by%20extract(month%20u.addedDate)%20desc%22,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22User%22,%22entityFullName%22:%22app.entity.User%22,%22filter%22:%22select%20COUNT(u.id)%20from%20User%20u%20%20group%20by%20extract(month%20u.addedDate)%20order%20by%20extract(month%20u.addedDate)%20desc%22,%22params%22:%22%5B%5D%22%7D" name="{{cronapi.database.Operations.query}}"/>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="L$M]hn.KRFx}}Z[%zse]" origintype="variables_get" output="true" tooltip="Returns the value of this variable." type="variables_get" x="344" y="226">
+    <field name="VAR">i</field>
+  </block>
+</blockly>

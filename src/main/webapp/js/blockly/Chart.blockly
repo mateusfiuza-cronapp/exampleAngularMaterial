@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly formTarget="src/main/webapp/views/logged/home.view.html" resourceType="JS" ruleDescription="Chart" ruleName="Chart" ruleSynchronous="false" ruleTimeout="300" ruleType="I">
+  <metadata scale="1" scrollx="123.40522503644297" scrolly="163.99999999999963" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Creates a function with an output." type="procedures_defreturn" x="128" y="-22">
+    <field name="NAME">createUserChart</field>
+    <comment h="80" pinned="false" w="160">Chart</comment>
+    <statement name="STACK">
+      <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="T1(k,a}IeE3(s1EWqpLX" origintype="variables_set" output="false" tooltip="Sets this variable to be equal to the input." type="variables_set">
+        <field name="VAR">labelList</field>
+        <value name="VALUE">
+          <block colour="#745ba5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="B~VV+N8s4v|]]0girtvk" origintype="lists_create_with" output="true" tooltip="Create a list with any number of items." type="lists_create_with">
+            <mutation items="8"/>
+            <value name="ADD0">
+              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="v+%tv+WtC-C!*F3(H(-n" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">Janerio</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="8,BSC0PC8Rmi60cQU8?0" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">Fevereiro</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="*]G;9W^]m:^kx*CMs|sy" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">Março</field>
+              </block>
+            </value>
+            <value name="ADD3">
+              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="rpT:KehsR=wg+T9Njd[=" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">Abril</field>
+              </block>
+            </value>
+            <value name="ADD4">
+              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="|IfsZTgr=j6U[TX0G,*T" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">Maio</field>
+              </block>
+            </value>
+            <value name="ADD5">
+              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="F*cf;l1LmFPypr1cC8X]" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">Junho</field>
+              </block>
+            </value>
+            <value name="ADD6">
+              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="2iP!#]S]h5TT-)8K_H!G" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">Julho</field>
+              </block>
+            </value>
+            <value name="ADD7">
+              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="6A%h3}V_I_qW|K*Zw-+G" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">Agosto</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="XQilCJ@^l{7%3gMYLOW," origintype="variables_set" output="false" tooltip="Sets this variable to be equal to the input." type="variables_set">
+            <field name="VAR">data</field>
+            <value name="VALUE">
+              <block colour="#745ba5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="b)tD2#cP5^x#M}de4vR@" origintype="lists_create_with" output="true" tooltip="Create a list with any number of items." type="lists_create_with">
+                <mutation items="8"/>
+                <value name="ADD0">
+                  <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="-[*fLXQ+[GT6g,-:{=h#" origintype="math_random_int" output="true" tooltip="Return a random integer between the two specified limits, inclusive." type="math_random_int">
+                    <value name="FROM">
+                      <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="QxZHaboFe(OhFYRp#msd" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <value name="TO">
+                      <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=":s)|FWMPy$0|[$Wi56K]" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">100</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=";s*xi(NFs5^R*-R[`j?w" origintype="math_random_int" output="true" tooltip="Return a random integer between the two specified limits, inclusive." type="math_random_int">
+                    <value name="FROM">
+                      <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="+tXc[zokd`R!s(=XFnQ}" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <value name="TO">
+                      <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="on6bRn/sQ2;}5ixp7V9-" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">100</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="p^a#TrM0:CCB@j?0fPJ=" origintype="math_random_int" output="true" tooltip="Return a random integer between the two specified limits, inclusive." type="math_random_int">
+                    <value name="FROM">
+                      <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="N(I*q6wgTwR=a(hpqNu^" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <value name="TO">
+                      <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="md9t1{-`Hg1[,2X[9P?1" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">100</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <value name="ADD3">
+                  <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="N|$6-Ug6}7OfHZ~^//SZ" origintype="math_random_int" output="true" tooltip="Return a random integer between the two specified limits, inclusive." type="math_random_int">
+                    <value name="FROM">
+                      <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="6U/Km;+JyFED^Wx/#3)m" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <value name="TO">
+                      <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="y*hhk1jhG6a}$,0z_(/:" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">100</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <value name="ADD4">
+                  <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="+C9IAq|8iXTsDXO4,60S" origintype="math_random_int" output="true" tooltip="Return a random integer between the two specified limits, inclusive." type="math_random_int">
+                    <value name="FROM">
+                      <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="^Va)-,p=Qw8M*)uq}JW4" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <value name="TO">
+                      <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="T}wU]|E[_91QOwp^r]2U" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">100</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <value name="ADD5">
+                  <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="d!DE:QbS@+SD[.U80E?b" origintype="math_random_int" output="true" tooltip="Return a random integer between the two specified limits, inclusive." type="math_random_int">
+                    <value name="FROM">
+                      <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="I87k^%aE(Ho;yEZDkwH^" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <value name="TO">
+                      <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="`3_O`l`Tzhz?3cipIQs}" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">100</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <value name="ADD6">
+                  <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="[suGz7:O,_4:ajx0H$NJ" origintype="math_random_int" output="true" tooltip="Return a random integer between the two specified limits, inclusive." type="math_random_int">
+                    <value name="FROM">
+                      <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="]-+V:[BRJIT#9g[:C-%U" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <value name="TO">
+                      <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="}jzO^@_$)M^ZxJtOdcr1" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">100</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <value name="ADD7">
+                  <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="ov$CQ;+k,Bjwg*1vAe@s" origintype="math_random_int" output="true" tooltip="Return a random integer between the two specified limits, inclusive." type="math_random_int">
+                    <value name="FROM">
+                      <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="C5oI;2#vo?]dq`/J,lem" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <value name="TO">
+                      <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Qg:RWX`I2A`K!FKfJb`?" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">100</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="O+tJrmlqJlz5hD[U!{HR" origintype="variables_set" output="false" tooltip="Sets this variable to be equal to the input." type="variables_set">
+                <field name="VAR">data1</field>
+                <value name="VALUE">
+                  <block colour="#745ba5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="52@mxw6k![@LC?wBxW-2" origintype="lists_create_with" output="true" tooltip="Create a list with any number of items." type="lists_create_with">
+                    <mutation items="8"/>
+                    <value name="ADD0">
+                      <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="PcKClK.UT?3`/`$s]o-i" origintype="math_random_int" output="true" tooltip="Return a random integer between the two specified limits, inclusive." type="math_random_int">
+                        <value name="FROM">
+                          <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="NTd;#b+*2hcE/222r4TY" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                        <value name="TO">
+                          <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="ZP^B.F]BpmB:lJv$)yZs" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">100</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="7{|~O{?g5i;+^_pX.;H^" origintype="math_random_int" output="true" tooltip="Return a random integer between the two specified limits, inclusive." type="math_random_int">
+                        <value name="FROM">
+                          <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="A?:.ZE*[UW[AunPf5V[B" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                        <value name="TO">
+                          <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="wH6GPfxM+E`~K~?Y]]gs" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">100</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="ADD2">
+                      <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="|-v$40qT;j6v5aJ6KU8b" origintype="math_random_int" output="true" tooltip="Return a random integer between the two specified limits, inclusive." type="math_random_int">
+                        <value name="FROM">
+                          <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Fac+;*K)g1O[i-Tn42V@" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                        <value name="TO">
+                          <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="z6W`#C%],H%3*^85*rE@" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">100</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="ADD3">
+                      <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="%S|l?Aw]nwY!Rhk(wzbS" origintype="math_random_int" output="true" tooltip="Return a random integer between the two specified limits, inclusive." type="math_random_int">
+                        <value name="FROM">
+                          <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="a-VbTq=WfUUDln*tz[3^" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                        <value name="TO">
+                          <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="eD=62O*QDa`k|qT.2qr#" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">100</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="ADD4">
+                      <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="JiSC2k6mMU3{?#7ok.I5" origintype="math_random_int" output="true" tooltip="Return a random integer between the two specified limits, inclusive." type="math_random_int">
+                        <value name="FROM">
+                          <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Vzo*aD]zKy8kc[^N[CsQ" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                        <value name="TO">
+                          <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=":0qf3cgov(fQ0J2i,4o`" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">100</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="ADD5">
+                      <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="*TMi-S_3}BLuM3ss~#*%" origintype="math_random_int" output="true" tooltip="Return a random integer between the two specified limits, inclusive." type="math_random_int">
+                        <value name="FROM">
+                          <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="=}E[pms_o10-_^kAtrPn" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                        <value name="TO">
+                          <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="%!~D/j7_wg*m(nVS-9F5" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">100</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="ADD6">
+                      <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="):jI([E@v9]1`-#zh1+/" origintype="math_random_int" output="true" tooltip="Return a random integer between the two specified limits, inclusive." type="math_random_int">
+                        <value name="FROM">
+                          <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="LqgFDtLO20t^3pK0(SC]" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                        <value name="TO">
+                          <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="$p^G7cmylEZ%:=LfXW]f" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">100</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="ADD7">
+                      <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Y@(Y*0Of_oqeU~oqLs+L" origintype="math_random_int" output="true" tooltip="Return a random integer between the two specified limits, inclusive." type="math_random_int">
+                        <value name="FROM">
+                          <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="+~_0E~o+Q(AA4I;ai@Xl" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                        <value name="TO">
+                          <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="/6#F(aGoRsei!jX:12tq" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">100</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block colour="#f582a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="d^`$I#to!65R#=UDjtOC" multilayer="false" namespace="cronapi.chart.createChart" origintype="procedures_arbitrary_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="Run the user-defined function 'Create chart'." type="procedures_arbitrary_callnoreturn">
+                    <mutation items="6" name="{{cronapi.chart.createChart}}">
+                      <arg name="Id"/>
+                      <arg name="Chart type"/>
+                      <arg name="Legends"/>
+                      <arg name="Options"/>
+                      <arg name="Chart serie(s)"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="dl.39U!v1(K{5T=edMST" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                        <field name="SELECT">chart5115</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block colour="#f582a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="GOS^2Z/-L.gm4D97,vIW" origintype="util_dropdown" output="true" type="util_dropdown">
+                        <mutation>
+                          <arg name="line" value="line"/>
+                          <arg name="bar" value="bar"/>
+                          <arg name="doughnut" value="doughnut"/>
+                          <arg name="pie" value="pie"/>
+                          <arg name="polarArea" value="polarArea"/>
+                        </mutation>
+                        <field name="SELECT">line</field>
+                      </block>
+                    </value>
+                    <value name="ARG2">
+                      <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="!~piwpPlUT8Ay0OU9ctK" origintype="variables_get" output="true" tooltip="Returns the value of this variable." type="variables_get">
+                        <field name="VAR">labelList</field>
+                      </block>
+                    </value>
+                    <value name="ARG4">
+                      <block colour="#f582a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="xbEV^Aa)o,a/Lc5YN$s1" multilayer="false" namespace="cronapi.chart.createDataset" origintype="procedures_callreturn" output="true" returntype="ObjectType.LIST" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3EName:%3C/strong%3E%3Cdiv%3ECreate%20serie%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescription:%3C/strong%3E%3Cdiv%3EFunction%20that%20create%20a%20chart%20serie%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParameters:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Serie%20name%20:%20String%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Data%20:%20List%3C/span%3E%3Cdiv%3E%20Serie%20data%3C/div%3E%3Cspan%3E%20-%20Options%20:%20List%3C/span%3E%3Cdiv%3E%20Serie%20Options%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3EReturn:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20List%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EHelp:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.chart.createDataset%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.chart.createDataset%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                        <mutation name="{{cronapi.chart.createDataset}}" return-raw-type="undefined">
+                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Serie name"/>
+                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.LIST" name="Data"/>
+                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.LIST" name="Options"/>
+                        </mutation>
+                        <value name="ARG0">
+                          <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Z%)*I4VMcKvO59]0N:n:" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field name="TEXT">Dataset 1</field>
+                          </shadow>
+                        </value>
+                        <value name="ARG1">
+                          <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="3ku8$O}tQvfSlQljY3}e" origintype="variables_get" output="true" tooltip="Returns the value of this variable." type="variables_get">
+                            <field name="VAR">data</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="ARG5">
+                      <block colour="#f582a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="=*AJoW+jB^(T+s7W^*Zv" multilayer="false" namespace="cronapi.chart.createDataset" origintype="procedures_callreturn" output="true" returntype="ObjectType.LIST" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3EName:%3C/strong%3E%3Cdiv%3ECreate%20serie%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescription:%3C/strong%3E%3Cdiv%3EFunction%20that%20create%20a%20chart%20serie%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParameters:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Serie%20name%20:%20String%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Data%20:%20List%3C/span%3E%3Cdiv%3E%20Serie%20data%3C/div%3E%3Cspan%3E%20-%20Options%20:%20List%3C/span%3E%3Cdiv%3E%20Serie%20Options%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3EReturn:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20List%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EHelp:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.chart.createDataset%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.chart.createDataset%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                        <mutation name="{{cronapi.chart.createDataset}}" return-raw-type="undefined">
+                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Serie name"/>
+                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.LIST" name="Data"/>
+                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.LIST" name="Options"/>
+                        </mutation>
+                        <value name="ARG0">
+                          <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="hY0jfb6T{Iy!He$#py:}" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field name="TEXT">Dataset 2</field>
+                          </shadow>
+                        </value>
+                        <value name="ARG1">
+                          <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="_n$ZXbcmV-O!,5^vJ[DG" origintype="variables_get" output="true" tooltip="Returns the value of this variable." type="variables_get">
+                            <field name="VAR">data1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</blockly>
